@@ -3,8 +3,10 @@ import { useNavigate } from "react-router-dom";
 
 // navigation bar
 function Navbar() {
-    const navigate = useNavigate();
 
+  const navigate = useNavigate();
+
+  // buttons with onclick event listner for navigating to the correct page via useNavigate
   return (
     <div className="text-right px-7 my-3">
       <nav>
@@ -31,9 +33,8 @@ function Navbar() {
         <button className="px-8  hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2"
         onClick={() => navigate ("/contacts")}
         >CONTACTS
-        </button>
+        </button>  
 
-        
       </nav>
     </div>
   );
