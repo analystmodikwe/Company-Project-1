@@ -1,4 +1,6 @@
 // about us, information about the business
+import { useNavigate } from "react-router-dom";
+
 function AboutUs() {
     const navigate = useNavigate();
 
