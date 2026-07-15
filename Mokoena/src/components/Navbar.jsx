@@ -8,15 +8,18 @@ function Navbar() {
   return (
     <div className="text-right px-7 my-3">
       <nav>
-        <button className="px-8  hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2" 
+        <button className="px-8  hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2"
+        onClick={() => navigate ("/about-us")} 
         >HOME
         </button>
 
-        <button className="px-8 hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2" 
+        <button className="px-8 hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2"
+        onClick={() => navigate ("/about-us")} 
         >SERVICES
         </button>
 
-        <button className="px-8 hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2" 
+        <button className="px-8 hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2"
+        onClick={() => navigate ("/about-us")}
         >OUR-PRODUCTS  
         </button>
 
@@ -25,7 +28,8 @@ function Navbar() {
         >ABOUT-US
         </button>
 
-        <button className="px-8  hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2" 
+        <button className="px-8  hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2"
+        onClick={() => navigate ("/about-us")}
         >CONTACTS
         </button>
 
