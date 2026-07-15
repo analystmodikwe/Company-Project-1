@@ -1,5 +1,7 @@
 // about us, information about the business
 function AboutUs() {
+    const navigate = useNavigate();
+
   return (
     <div>
         <h1> About Us</h1>
