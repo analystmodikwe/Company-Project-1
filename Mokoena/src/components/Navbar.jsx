@@ -17,6 +17,10 @@ function Navbar() {
         </button>
 
         <button className="px-8 hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2" 
+        >OUR-PRODUCTS  
+        </button>
+
+        <button className="px-8 hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2" 
         onClick={() => navigate ("/about-us")}
         >ABOUT-US
         </button>
@@ -25,9 +29,7 @@ function Navbar() {
         >CONTACTS
         </button>
 
-        <button className="px-8 hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2" 
-        >
-            OUR-PRODUCTS</button>
+        
       </nav>
     </div>
   );
