@@ -9,17 +9,17 @@ function Navbar() {
     <div className="text-right px-7 my-3">
       <nav>
         <button className="px-8  hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2"
-        onClick={() => navigate ("/about-us")} 
+        onClick={() => navigate ("/")} 
         >HOME
         </button>
 
         <button className="px-8 hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2"
-        onClick={() => navigate ("/about-us")} 
+        onClick={() => navigate ("/sevices")} 
         >SERVICES
         </button>
 
         <button className="px-8 hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2"
-        onClick={() => navigate ("/about-us")}
+        onClick={() => navigate ("/our-products")}
         >OUR-PRODUCTS  
         </button>
 
@@ -29,7 +29,7 @@ function Navbar() {
         </button>
 
         <button className="px-8  hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2"
-        onClick={() => navigate ("/about-us")}
+        onClick={() => navigate ("/contacts")}
         >CONTACTS
         </button>
 
