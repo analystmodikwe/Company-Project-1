@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar.jsx"
+import AboutUs from "./pages/AboutUs.jsx"
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -6,6 +7,7 @@ function App() {
   return (
     <div>
       <Navbar />
+      <AboutUs />
     </div>
   )
 }
