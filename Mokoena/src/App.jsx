@@ -11,11 +11,15 @@ function App() {
   return (
     <div>     
         <Navbar />       
-          <section id="home"><Home /></section>
-          <section id="services"><Services /></section>
-          <section id="menu"><Menu /></section>
-          <section id="about-us"><AboutUs /></section>
-          <section id="contacts"><Contact /></section>
+          <section id="home" className="min-h-screen py-10 px-7 border-t border-gray-200" ><Home /></section>
+
+          <section id="services" className="min-h-screen py-10 px-7 border-t border-gray-200" ><Services /></section>
+
+          <section id="menu" className="min-h-screen py-10 px-7 border-t border-gray-200" ><Menu /></section>
+
+          <section id="about-us" className="min-h-screen py-10 px-7 border-t border-gray-200"><AboutUs /></section>
+
+          <section id="contacts" className="min-h-screen py-10 px-7 border-t border-gray-200"><Contact /></section>
         
         <Footer />    
     </div>
