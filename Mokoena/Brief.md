@@ -30,8 +30,8 @@ No browser router
 The navigation bar keeps disappearing as you scroll down 
 
 The order now link is not working as it should be 
-
-The form is taking the message but busines doesnt recieve them
+<!-- for both order now link and form i decided to just add whatsApp button where customers can just place an order by send a message directly to whatsapp, no backend or database needed -->
+The form is taking the message but busines doesnt recieve them 
 
 Address and email address are poorly placed  
 
