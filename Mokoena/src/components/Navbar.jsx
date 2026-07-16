@@ -1,8 +1,7 @@
 
-
-
 // navigation bar
-// scroll intoveiw will ensure that you dont navigate, the page scroll when veiwing,by its navbar
+// ?. optional chain operator, it will only run if the value befor it exist else it will throw error
+// scrollIntoveiw will ensure that you dont navigate, the page scroll when veiwing,by its navbar 
 function Navbar() {
 
   const scrollToSection = (id) => {
