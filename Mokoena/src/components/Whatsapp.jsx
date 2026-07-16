@@ -9,8 +9,12 @@ function Whatsapp() {
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
-    <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="bg-green-500 hover:bg-green-600 text-white font-bold px-6 py-3 rounded-full inline-block">
-      Order Via Whatsapp
+    <a href={whatsappUrl} target="_blank" 
+    rel="noopener noreferrer" 
+
+    // styling for making the whatsapp link to be fixed so that it appears in every page
+    className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white font-bold px-6 py-3 rounded-full shadow-lg z-50">
+    Order Via Whatsapp
     </a>
   );
 }
