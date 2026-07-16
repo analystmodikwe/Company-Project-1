@@ -22,7 +22,7 @@ function Navbar() {
 
         <button className="px-8 hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2"
         onClick={() => navigate ("/menu")}
-        >Menu 
+        >MENU 
         </button>
 
         <button className="px-8 hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2" 
