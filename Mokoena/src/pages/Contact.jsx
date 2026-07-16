@@ -1,4 +1,5 @@
 // import { useNavigate } from "react-router-dom";
+import Map from "../components/Map";
 
 function Contact() {
     // const navigate = useNavigate();
@@ -12,6 +13,8 @@ function Contact() {
         ekjrfh3uyebrcfyueheishciuwncduehciuhdcfhwixueddcvuierdjuhewjgfeujcuijuhfndiewciewheimhgdmhydhyuekuydhyhfjhgdjdy
         jdhhwddjuhdudjhudujfdufdhufeiuhfejfhfehfherifhnyerfyeuhjedewiuhcdjwhueewnfdewuhfwejdneuhdwejdnewudnuehehfuefne
       </p>
+      
+      <Map />
     </div>
   )
 }
