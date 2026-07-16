@@ -1,4 +1,5 @@
-import { FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";
+import { FaShieldHalved, FaFileLines, FaLocationDot, FaPhone, FaEnvelope } from "react-icons/fa6";  
+  
 
 // const year = new Date().getFullYear(); this will update the current year, every year automatically {year} will hold current year
 function Footer() {
@@ -27,6 +28,11 @@ function Footer() {
       <p>
         <FaEnvelope /> info@mokoenattholdings.co.za
       </p>
+
+      <br></br>
+
+      <p><FaShieldHalved /> Privacy Policy</p>
+      <p><FaFileLines /> Terms & Conditions</p>
 
       <br></br>
 
