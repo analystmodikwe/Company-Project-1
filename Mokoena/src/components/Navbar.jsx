@@ -2,11 +2,15 @@
 // navigation bar
 // ?. optional chain operator, it will only run if the value befor it exist else it will throw error
 // scrollIntoveiw will ensure that you dont navigate, the page scroll when veiwing,by its navbar 
+//  window.history.pushState(null, "", `/#${id}`);  updates URL, no reload
+  
 function Navbar() {
 
   const scrollToSection = (id) => {
     document.getElementById(id)?.scrollIntoView({ behaviour: "smooth" })
+    window.history.pushState(null, "", `/#${id}`); 
   };
+  
 
   // buttons with onclick event listner for navigating to the correct page 
   // type = "button" to ensure that it doesn't default to type = "submit"
