@@ -31,6 +31,8 @@ The navigation bar keeps disappearing as you scroll down
 
 The order now link is not working as it should be 
 
+The form is taking the message but busines doesnt recieve them
+
 Address and email address are poorly placed  
 
 Pictures of their items are not really placed properly 
