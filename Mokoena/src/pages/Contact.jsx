@@ -1,9 +1,6 @@
 // import { useNavigate } from "react-router-dom";
 import Map from "../components/Map";
 import {
-  FaShieldHalved,
-  FaFileLines,
-  FaLocationDot,
   FaPhone,
   FaEnvelope,
   FaWhatsapp,
