@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar.jsx";
 import AboutUs from "./pages/AboutUs.jsx"
 import Contact from "./pages/Contact.jsx";
 import Home from "./pages/Home.jsx";
-import OurProducts from "./pages/OurProducts.jsx";
+import Menu from "./pages/Menu.jsx";
 import Services from "./pages/Services.jsx";
 import Footer from "./components/Footer.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element= {<Home />} />
           <Route path="/services" element= {<Services />} />
-          <Route path="/our-products" element= {<OurProducts />} />
+          <Route path="/menu" element= {<Menu />} />
           <Route path="/about-us" element= {<AboutUs />} />         
           <Route path="/contacts" element= {<Contact />} />         
         </Routes>

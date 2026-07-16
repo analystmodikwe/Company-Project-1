@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
 
-function OurProducts() {
+function Menu() {
     const navigate = useNavigate();
     
   return (
-    <div>OurProducts</div>
+    <div>Menu</div>
   )
 }
 
-export default OurProducts
+export default Menu;
