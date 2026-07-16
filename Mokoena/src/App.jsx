@@ -5,23 +5,19 @@ import Home from "./pages/Home.jsx";
 import Menu from "./pages/Menu.jsx";
 import Services from "./pages/Services.jsx";
 import Footer from "./components/Footer.jsx";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      {/* browser router for linking the navbar components and pages */}
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/contacts" element={<Contact />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
+    <div>     
+        <Navbar />       
+          <section id="home"><Home /></section>
+          <section id="services"><Services /></section>
+          <section id="menu"><Menu /></section>
+          <section id="about-us"><AboutUs /></section>
+          <section id="contacts"><Contact /></section>
+        
+        <Footer />    
     </div>
   );
 }
