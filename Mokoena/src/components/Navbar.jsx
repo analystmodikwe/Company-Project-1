@@ -1,37 +1,48 @@
-import { useNavigate } from "react-router-dom";
+
 
 
 // navigation bar
+// scroll intoveiw will ensure that you dont navigate, the page scroll when veiwing,by its navbar
 function Navbar() {
 
-  const navigate = useNavigate();
+  const scrollToSection = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behaviour: "smooth" })
+  };
 
-  // buttons with onclick event listner for navigating to the correct page via useNavigate
+  // buttons with onclick event listner for navigating to the correct page 
+  // type = "button" to ensure that it doesn't default to type = "submit"
   return (
     <div className="text-right px-7 my-3">
-      <nav>
+
+      <nav className="sticky top-0 bg-white z-50">
+
         <button className="px-8  hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2"
-        onClick={() => navigate ("/")} 
+        type="button"
+        onClick={() => scrollToSection ("home")} 
         >HOME
         </button>
 
         <button className="px-8 hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2"
-        onClick={() => navigate ("/services")} 
+        type="button"
+        onClick={() => scrollToSection ("services")}  
         >SERVICES
         </button>
 
         <button className="px-8 hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2"
-        onClick={() => navigate ("/menu")}
+        type="button"
+        onClick={() => scrollToSection ("menu")} 
         >MENU 
         </button>
 
-        <button className="px-8 hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2" 
-        onClick={() => navigate ("/about-us")}
+        <button className="px-8 hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2"
+        type="button" 
+        onClick={() => scrollToSection ("about-us")} 
         >ABOUT-US
         </button>
 
         <button className="px-8  hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2"
-        onClick={() => navigate ("/contacts")}
+        type="button"
+        onClick={() => scrollToSection ("contacts")} 
         >CONTACTS
         </button>  
 
