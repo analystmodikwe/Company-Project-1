@@ -6,15 +6,16 @@ function Contact() {
     
   return (
     <div>
-      <p>
+      <Map /> 
+      <p  dir="rtl" class="float-start">
         just testing to see the layout of the page, my name is lesedi njbfgfjhbhc hbuyerhbyucbu hueybcehrucbrech cerybcheubcerucbeubcerubeubcceuchejhbcehgcbehjbrhcceujbchejhbeujrbfrefhbeurfbcrehbfcebejchbuehrcbehbrrhebbeh
         fjejujyfghriojjjjjjjjjjjjjjjjjjjjjjeruihfuieorfjcueeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeri
         eichybyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyererbuyfh
         ekjrfh3uyebrcfyueheishciuwncduehciuhdcfhwixueddcvuierdjuhewjgfeujcuijuhfndiewciewheimhgdmhydhyuekuydhyhfjhgdjdy
         jdhhwddjuhdudjhudujfdufdhufeiuhfejfhfehfherifhnyerfyeuhjedewiuhcdjwhueewnfdewuhfwejdneuhdwejdnewudnuehehfuefne
       </p>
+
       
-      <Map />
     </div>
   )
 }
