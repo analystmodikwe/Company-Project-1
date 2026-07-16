@@ -13,7 +13,7 @@ function Footer() {
   return (
     <footer className="px-8  hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2">
       <div className="max-w-5xl mx-auto flex flex-col items-center text-center gap-4">
-        <h3 className="text-2xl font-bold text-white tracking-wide">
+        <h3 className="text-2xl font-bold text-gray-400 tracking-wide">
           MOKOENA TT HOLDINGS
         </h3>
         <p className="text-gray-400 text-sm">
