@@ -1,7 +1,7 @@
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 function Contact() {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     
   return (
     <div>Contact</div>
