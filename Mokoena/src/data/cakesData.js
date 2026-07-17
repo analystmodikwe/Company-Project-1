@@ -13,5 +13,5 @@ export const cakes = [
   { name: "Nutella Chocolate", image: NutellaChocolate, price: `R ${100}` },
   { name: "Red Velvet", image: RedVelvet, price: `R ${100}` },
   { name: "Vanilla Sponge ", image: VanillaSponge , price: `R ${100}` },
-  { name: "Wedding Cake's", image: ClassicChocolate, price: `from R ${100} depending on your desired style`},
+  { name: "Wedding Cake's", image: WeddingCake, price: `from R ${100} depending on your desired style`},
 ];
