@@ -1,4 +1,4 @@
-import HomePic1 from "../images/home pic1.jpg";
+
 
 function Home() {
     
@@ -7,8 +7,7 @@ function Home() {
     <div>
 
       <div>
-        <img src={HomePic1}/>
-
+        <img src={} alt="Freshly baked bread and pastries at Mokoena TT Holdings" className="w-full h-full object-cover" />
       </div>
       
      
