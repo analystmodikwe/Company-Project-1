@@ -7,7 +7,6 @@ import SpecialOccasionTreats from "../images/services-images/SpecialOccasionTrea
 
 import Background from "../images/services-images/Background.png";
 
-
 //  an array to hold parts/images that differ
 const services = [
   { name: "Artisan Breads", image: ArtisanBread1 },
@@ -21,25 +20,20 @@ const services = [
 // services
 function Services() {
   return (
-
     // background image
-        <div
-          className="relative bg-cover bg-center bg-fixed"
-          style={{ backgroundImage: `url(${Background})` }}
-        >
-          
-          {/* dark overlay so cards stay readable */}
-          <div className="absolute inset-0 bg-black/10"></div>
-
-
-
+    <div
+      className="relative bg-cover bg-center bg-fixed"
+      style={{ backgroundImage: `url(${Background})` }}
+    >
+      {/* dark overlay so cards stay readable */}
+      <div className="absolute inset-0 bg-black/10"></div>
 
       <div className="max-w-6xl mx-auto px-6 py-20">
         <div className="text-center mb-12">
-          <p className="text-orange-500 font-semibold tracking-wide uppercase text-sm mb-2">
+          <p className="text-orange-100 font-semibold tracking-wide uppercase text-sm mb-2">
             What We Offer
           </p>
-          <h1 className="text-4xl font-bold text-gray-400">
+          <h1 className="text-4xl font-bold text-gray-900">
             Our Delicious Offerings
           </h1>
         </div>
@@ -60,7 +54,7 @@ function Services() {
                 />
               </div>
               <div className="p-5">
-                <h3 className="text-lg font-semibold text-orange-100 text-center">
+                <h3 className="text-lg font-semibold text-gray-100 text-center">
                   {service.name}
                 </h3>
               </div>
@@ -68,7 +62,7 @@ function Services() {
           ))}
         </div>
       </div>
-       </div>
+    </div>
   );
 }
 
