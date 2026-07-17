@@ -6,8 +6,8 @@ function Home() {
     <div>
 
       {/* hero section */}
-      <div className="relative w-full h-[80vh] overflow-hidden ">
-        <img src={WelcomePic} alt="Freshly baked bread and pastries at Mokoena TT Holdings" className="w-full h-full object-cover" />
+      <div className="relative w-full h-[80vh] overflow-hidden backdrop-blur  ">
+        <img src={WelcomePic} alt="Freshly baked bread and pastries at Mokoena TT Holdings" className="w-full h-full object-cover " />
 
         {/* dark overlay for text readability */}
         <div className="absolute inset-0 bg-black/40 flex flex-col items-center justify-center text-center px-6">
