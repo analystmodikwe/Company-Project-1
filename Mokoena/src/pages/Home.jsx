@@ -1,4 +1,4 @@
-import WelcomePic from "../images/welcome-image/WelcomePic.jpg"
+import WelcomePic from "../images/welcome-image/WelcomePic.png"
 
 function Home() {
    
