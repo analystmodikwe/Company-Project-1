@@ -7,7 +7,7 @@ import SpecialOccasionTreats from "../images/services-images/SpecialOccasionTrea
 
 
 //  an array to hold parts/images that differ
-const services = [
+export const services = [
   { name: "Artisan Breads", image: ArtisanBread1 },
   { name: "Custom Cup Cakes", image: CustomCupCakes },
   { name: "Delectable Cakes", image: DelectableCakes },
