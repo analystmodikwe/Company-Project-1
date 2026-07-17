@@ -8,18 +8,11 @@ import Whatsapp from "./components/Whatsapp.jsx";
 import Footer from "./components/Footer.jsx";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Background from "./images/services-images/Background.png";
+
 
 function App() {
   return (
-    // background image
-    <div
-      className="relative bg-cover bg-center bg-fixed"
-      style={{ backgroundImage: `url(${Background})` }}
-    >
-      
-      {/* dark overlay so cards stay readable */}
-      <div className="absolute inset-0 bg-black/10"></div>
+    
 
       <div>
         <Navbar />
@@ -61,7 +54,7 @@ function App() {
         <Whatsapp />
         <Footer />
       </div>
-    </div>
+   
   );
 }
 

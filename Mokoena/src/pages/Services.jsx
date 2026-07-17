@@ -5,6 +5,8 @@ import MeltingMoments from "../images/services-images/MeltingMoments.jpg";
 import SeasonalSpecials from "../images/services-images/SeasonalSpecials.jpg";
 import SpecialOccasionTreats from "../images/services-images/SpecialOccasionTreats.jpg";
 
+import Background from "../images/services-images/Background.png";
+
 
 //  an array to hold parts/images that differ
 const services = [
@@ -19,6 +21,18 @@ const services = [
 // services
 function Services() {
   return (
+
+    // background image
+        <div
+          className="relative bg-cover bg-center bg-fixed"
+          style={{ backgroundImage: `url(${Background})` }}
+        >
+          
+          {/* dark overlay so cards stay readable */}
+          <div className="absolute inset-0 bg-black/10"></div>
+
+
+
 
       <div className="max-w-6xl mx-auto px-6 py-20">
         <div className="text-center mb-12">
@@ -54,6 +68,7 @@ function Services() {
           ))}
         </div>
       </div>
+       </div>
   );
 }
 
