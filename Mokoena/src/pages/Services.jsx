@@ -32,6 +32,8 @@ function Services() {
       {/* .map will take perform a function in every single element/picture in the array and then render a new array with the newly performed function */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((service) => (
+
+          // key={service.name} this is how react tracks which array is which like the id of an array so that when there are changes it will efficiently figure out
           <div
             key={service.name}
             className="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-white">
