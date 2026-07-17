@@ -1,8 +1,7 @@
 import WelcomePic from "../images/WelcomePic.png"
 
 function Home() {
-    
-    
+   
   return (
     <div>
 
@@ -16,12 +15,7 @@ function Home() {
 
           <p className="text-lg md:text-xl text-gray-200 max-w-2xl">Freshly Baked Goods, Locally Made</p>
         </div>
-
-
-
-      </div>
-      
-     
+      </div>    
     </div>
   )
 }
