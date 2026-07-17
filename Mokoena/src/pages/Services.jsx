@@ -23,9 +23,9 @@ function Services() {
 
     // background image
     <div className="relative bg-cover bg-center bg-fixed" style={{ backgroundImage: `url(${Background})` }}>
-
+      
       {/* dark overlay so cards stay readable */}
-      <div className="absolute inset-0 bg-black/10"></div>
+      <div className="absolute inset-0 bg-black/10"></div> 
 
       <div className="max-w-6xl mx-auto px-6 py-20">
         <div className="text-center mb-12">
@@ -61,7 +61,7 @@ function Services() {
           ))}
         </div>
       </div>
-    </div>
+    </div> 
   );
 }
 
