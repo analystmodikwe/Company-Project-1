@@ -8,23 +8,59 @@ import Whatsapp from "./components/Whatsapp.jsx";
 import Footer from "./components/Footer.jsx";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import Background from "./images/services-images/Background.png";
+
 function App() {
   return (
-    <div>     
-        <Navbar />       
-          <section id="home" className="min-h-screen py-10 px-7 border-t border-gray-200" ><Home /></section>
+    // background image
+    <div
+      className="relative bg-cover bg-center bg-fixed"
+      style={{ backgroundImage: `url(${Background})` }}
+    >
+      
+      {/* dark overlay so cards stay readable */}
+      <div className="absolute inset-0 bg-black/10"></div>
 
-          <section id="services" className="min-h-screen py-10 px-7 border-t border-gray-200" ><Services /></section>
+      <div>
+        <Navbar />
+        <section
+          id="home"
+          className="min-h-screen py-10 px-7 border-t border-gray-200"
+        >
+          <Home />
+        </section>
 
-          <section id="menu" className="min-h-screen py-10 px-7 border-t border-gray-200" ><Menu /></section>
+        <section
+          id="services"
+          className="min-h-screen py-10 px-7 border-t border-gray-200"
+        >
+          <Services />
+        </section>
 
-          <section id="about-us" className="min-h-screen py-10 px-7 border-t border-gray-200"><AboutUs /></section>
+        <section
+          id="menu"
+          className="min-h-screen py-10 px-7 border-t border-gray-200"
+        >
+          <Menu />
+        </section>
 
-          <section id="contacts" className="min-h-screen py-10 px-7 border-t border-gray-200"><Contact /></section>
+        <section
+          id="about-us"
+          className="min-h-screen py-10 px-7 border-t border-gray-200"
+        >
+          <AboutUs />
+        </section>
 
+        <section
+          id="contacts"
+          className="min-h-screen py-10 px-7 border-t border-gray-200"
+        >
+          <Contact />
+        </section>
 
         <Whatsapp />
-        <Footer />    
+        <Footer />
+      </div>
     </div>
   );
 }
