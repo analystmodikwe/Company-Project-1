@@ -4,5 +4,5 @@ import BrownBread from "../images/everyday-treats/BrownBread.png";
 
 
 const everydayTreats =[
-  {}
+   { name: "Brown Bread", image: BrownBread, price: `R ${12} each` }, 
 ];
