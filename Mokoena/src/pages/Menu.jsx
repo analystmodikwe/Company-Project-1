@@ -1,5 +1,6 @@
 import { cakes } from "../data/cakesData.js";
 import { everydayTreats } from "../data/everydayData.js";
+import { specialdelights } from "../data/specialdelightsData.js";
 
 // MENU
 function Menu() {
@@ -11,7 +12,7 @@ function Menu() {
 
         {/* each image card from the array lives here */}
         {/* .map will perform a function in every original array and then return a new array with newly performed function */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
           {cakes.map((cake) => (
             // key is for react to know which array is which it tracks the id or index of an array
             <div className="bg-gray-300 rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-200" key={cake.name}>
@@ -36,7 +37,7 @@ function Menu() {
 
         {/* each image card from the array lives here */}
         {/* .map will perform a function in every original array and then return a new array with newly performed function */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
           {everydayTreats.map((treat) => (
 
             // key is for react to know which array is which it tracks the id or index of an array
@@ -63,21 +64,21 @@ function Menu() {
 
         {/* each image card from the array lives here */}
         {/* .map will perform a function in every original array and then return a new array with newly performed function */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
-          {everydayTreats.map((treat) => (
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-15 ">
+          {specialdelights.map((delight) => (
 
             // key is for react to know which array is which it tracks the id or index of an array
-            <div className="bg-gray-300 rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-200" key={treat.name}>
+            <div className="bg-gray-300 rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-200" key={delight.name}>
               
               {/* image per Array */}
               <div className="aspect-square overflow-hidden">
-                <img src={treat.image} alt={treat.name} className="w-full h-full object-cover"/>
+                <img src={delight.image} alt={delight.name} className="w-full h-full object-cover"/>
               </div>
 
               {/* image name and price */}
               <div className="p-4 text-center">
-                <h3 className="text-lg font-medium">{treat.name}</h3>
-                <h4 className="text-sm font-semibold text-[#8a5a44] mt-1">{treat.price}</h4>
+                <h3 className="text-lg font-medium">{delight.name}</h3>
+                <h4 className="text-sm font-semibold text-[#8a5a44] mt-1">{delight.price}</h4>
               </div>
             </div>
           ))}
