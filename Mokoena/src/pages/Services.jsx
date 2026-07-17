@@ -29,23 +29,30 @@ function Services() {
       <div className="absolute inset-0 bg-black/10"></div>
 
       <div className="max-w-6xl mx-auto px-6 py-20">
+
         <div className="text-center mb-12">
+          
           <p className="text-orange-100 font-semibold tracking-wide uppercase text-sm mb-2">
             What We Offer
           </p>
+
           <h1 className="text-4xl font-bold text-gray-900">
             Our Delicious Offerings
           </h1>
+
         </div>
 
         {/* .map will take perform a function in every single element/picture in the array and then render a new array with the newly performed function */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
+
             // key={service.name} this is how react tracks which array is which like the id of an array so that when there are changes it will efficiently figure out
             <div
               key={service.name}
               className="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-transparent"
             >
+
+              {/* image per Array */}
               <div className="h-48 overflow-hidden">
                 <img
                   src={service.image}
@@ -53,11 +60,14 @@ function Services() {
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
+
+              {/* image name  */}
               <div className="p-5">
                 <h3 className="text-lg font-semibold text-gray-100 text-center">
                   {service.name}
                 </h3>
               </div>
+
             </div>
           ))}
         </div>
