@@ -1,4 +1,4 @@
-
+import { services } from "../data/services/services.js";
 
 // background photo 
 import Background from "../images/services-images/Background.png";
