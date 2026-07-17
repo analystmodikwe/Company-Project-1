@@ -12,7 +12,7 @@ function Navbar() {
   // buttons with onclick event listner for navigating to the correct page
   // type = "button" to ensure that it doesn't default to type = "submit"
   return (
-    <nav className="sticky  top-0 bg-white z-50 text-right">
+    <nav className="sticky top-0  backdrop-blur-md bg-white/30 z-50 text-right px-7 my-3">
       <button
         className="px-8 cursor-pointer  hover:bg-blue-700 text-black font-bold px-2 mx-1 rounded mb-2"
         type="button"
