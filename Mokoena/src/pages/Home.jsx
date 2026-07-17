@@ -1,17 +1,17 @@
-// import { useNavigate } from "react-router-dom";
+import HomePic1 from "../images/home pic1.jpg";
 
 function Home() {
-    // const navigate = useNavigate();
+    
     
   return (
     <div>
-      <p>
-        just testing to see the layout of the page, my name is lesedi njbfgfjhbhc hbuyerhbyucbu hueybcehrucbrech cerybcheubcerucbeubcerubeubcceuchejhbcehgcbehjbrhcceujbchejhbeujrbfrefhbeurfbcrehbfcebejchbuehrcbehbrrhebbeh
-        fjejujyfghriojjjjjjjjjjjjjjjjjjjjjjeruihfuieorfjcueeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeri
-        eichybyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyererbuyfh
-        ekjrfh3uyebrcfyueheishciuwncduehciuhdcfhwixueddcvuierdjuhewjgfeujcuijuhfndiewciewheimhgdmhydhyuekuydhyhfjhgdjdy
-        jdhhwddjuhdudjhudujfdufdhufeiuhfejfhfehfherifhnyerfyeuhjedewiuhcdjwhueewnfdewuhfwejdneuhdwejdnewudnuehehfuefne
-      </p>
+
+      <div>
+        <img src={HomePic1}/>
+
+      </div>
+      
+     
     </div>
   )
 }
