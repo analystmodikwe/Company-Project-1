@@ -42,7 +42,7 @@ function Menu() {
             <div key={treat.name}>
               {/* image per Array */}
               <div>
-                <image src={treat.image} alt={treat.name} />
+                <img src={treat.image} alt={treat.name} />
               </div>
 
               {/* image name and price */}
