@@ -1,7 +1,11 @@
 import ArtisanBread1 from "../images/services-images/ArtisanBread1.jpg";
 
+
 //  an array to hold parts/images that differ
-const services = [{ name: "Artisan Breads", image: ArtisanBread1 }];
+const services = [
+  { name: "Artisan Breads", image: ArtisanBread1 }
+
+];
 
 // services
 
