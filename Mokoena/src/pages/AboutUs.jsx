@@ -4,6 +4,7 @@ function AboutUs() {
     
   // About us page
   return (
+
     <div className="max-w-4xl mx-auto px-6 py-20">
 
       <div className="text-center mb-12">
@@ -31,6 +32,7 @@ function AboutUs() {
       </div>
 
     </div>
+    
   );
 }
 
