@@ -23,8 +23,8 @@ function AboutUs() {
 
           <p>
             Whether you're stopping by for your daily loaf or ordering for a special celebration, we're dedicated to making every visit a delightful experience.
-            <br></br>               
-        </p>
+                          
+          </p>
       </div>
 
       <div className="mt-12 text-center border-t border-gray-100 pt-10">
