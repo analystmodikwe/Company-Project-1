@@ -1,5 +1,5 @@
 // whatsapp component for customers to be able to order
-// import React from "react";
+
 
 function Whatsapp() {
   const phoneNumber = "27113851438";
