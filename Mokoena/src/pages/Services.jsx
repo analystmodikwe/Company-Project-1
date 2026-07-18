@@ -1,7 +1,5 @@
 import { services } from "../data/services.js";
 
-
-
 // services
 function Services() {
   return (
