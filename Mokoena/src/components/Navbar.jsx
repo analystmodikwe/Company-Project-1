@@ -27,7 +27,7 @@ function Navbar() {
   // buttons with onclick event listner for navigating to the correct page
   // type = "button" to ensure that it doesn't default to type = "submit"
   return (
-    <nav className="sticky top-0 backdrop-blur-md bg-white/30 z-50 px-7 py-3">
+    <nav className="sticky top-0 bg-white/90 z-50 px-7 py-3">
       <div className="flex items-center justify-end">
         {/* hamburger toggle - only visible on mobile */}
         <button
