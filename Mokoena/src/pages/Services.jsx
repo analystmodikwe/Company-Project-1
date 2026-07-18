@@ -1,23 +1,22 @@
 import { services } from "../data/services.js";
 
-// background photo 
-import Background from "../images/services-images/Background.png";
+// background photo
+import Background from "../images/services-images/Background.webp";
 
 // services
 function Services() {
   return (
-    // background image
-    <div
-      className="relative bg-cover bg-center bg-fixed"
-      style={{ backgroundImage: `url(${Background})` }}
-    >
+    <div>
+      {/* background image */}
+      <div
+        className="relative bg-cover bg-center bg-fixed"
+        style={{ backgroundImage: `url(${Background})` }}
+      ></div>
       {/* dark overlay so cards stay readable */}
       <div className="absolute inset-0 bg-black/10"></div>
 
       <div className="max-w-6xl mx-auto px-6 py-20">
-
         <div className="text-center mb-12">
-
           <p className="text-orange-100 font-semibold tracking-wide uppercase text-sm mb-2">
             What We Offer
           </p>
@@ -25,19 +24,16 @@ function Services() {
           <h1 className="text-4xl font-bold text-gray-900">
             Our Delicious Offerings
           </h1>
-
         </div>
 
         {/* .map will take perform a function in every single element/picture in the array and then render a new array with the newly performed function */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
-
             // key={service.name} this is how react tracks which array is which like the id of an array so that when there are changes it will efficiently figure out
             <div
               key={service.name}
               className="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-transparent"
             >
-
               {/* image per Array */}
               <div className="h-48 overflow-hidden">
                 <img
@@ -53,7 +49,6 @@ function Services() {
                   {service.name}
                 </h3>
               </div>
-
             </div>
           ))}
         </div>
