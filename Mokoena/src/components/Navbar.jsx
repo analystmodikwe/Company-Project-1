@@ -5,7 +5,7 @@
 
 function Navbar() {
   const scrollToSection = (id) => {
-    document.getElementById(id)?.scrollIntoView({ behaviour: "smooth" });
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     window.history.pushState(null, "", `/#${id}`);
   };
 
