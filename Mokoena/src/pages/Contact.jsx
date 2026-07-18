@@ -1,7 +1,7 @@
 // import { useNavigate } from "react-router-dom";
 import Map from "../components/Map";
 import { FaPhone, FaEnvelope, FaWhatsapp } from "react-icons/fa6";
-import Whatsapp from "../components/Whatsapp";
+
 
 // contact info
 function Contact() {
