@@ -14,35 +14,35 @@ function App() {
       <Navbar />
       <section
         id="home"
-        className="min-h-screen py-10 px-7 border-t border-gray-200"
+        className="min-h-screen py-10  border-t border-gray-200 scroll-mt-20 "
       >
         <Home />
       </section>
 
       <section
         id="services"
-        className="min-h-screen py-10 px-7 border-t border-gray-200"
+        className="min-h-screen py-10 border-t border-gray-200 scroll-mt-20 "
       >
         <Services />
       </section>
 
       <section
         id="menu"
-        className="min-h-screen py-10 px-7 border-t border-gray-200"
+        className="min-h-screen py-10 border-t border-gray-200 scroll-mt-20 "
       >
         <Menu />
       </section>
 
       <section
         id="about-us"
-        className="min-h-screen py-10 px-7 border-t border-gray-200"
+        className="min-h-screen py-10 border-t border-gray-200 scroll-mt-20 "
       >
         <AboutUs />
       </section>
 
       <section
         id="contacts"
-        className="min-h-screen py-10 px-7 border-t border-gray-200"
+        className="min-h-screen py-10 border-t border-gray-200 scroll-mt-20"
       >
         <Contact />
       </section>
