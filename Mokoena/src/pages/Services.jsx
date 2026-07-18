@@ -4,16 +4,7 @@ import { services } from "../data/services.js";
 function Services() {
   return (
 
-    <div className="relative  overflow-hidden">
-
-      {/* background Blur */}
-      <div className= "absolute inset-0 -z-10">
-
-        {/* the orange blur top left and bottom left */}
-        <div className="absolute top-0 left-0 w-64 h-64 sm:w-96 sm:h-96 bg-orange-300 rounded-full blur-2xl opacity-40 will-change-transform"></div>
-        <div className="absolute bottom-0 right-0 w-64 h-64 sm:w-96 sm:h-96 bg-orange-500 rounded-full blur-2xl opacity-30 will-change-transform"></div> 
-
-      </div>
+    <div className="relative bg-gray-200 overflow-hidden">
 
       <div className="relative max-w-6xl mx-auto px-6 py-20">
         <div className="text-center mb-12">
@@ -32,7 +23,7 @@ function Services() {
             // key={service.name} this is how react tracks which array is which like the id of an array so that when there are changes it will efficiently figure out
             <div
               key={service.name}
-              className="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-transparent"
+              className="rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-white"
             >
               {/* image per Array */}
               <div className="h-48 overflow-hidden">
