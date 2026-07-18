@@ -1,10 +1,6 @@
 // import { useNavigate } from "react-router-dom";
 import Map from "../components/Map";
-import {
-  FaPhone,
-  FaEnvelope,
-  FaWhatsapp,
-} from "react-icons/fa6";
+import { FaPhone, FaEnvelope, FaWhatsapp } from "react-icons/fa6";
 import Whatsapp from "../components/Whatsapp";
 
 // contact info
@@ -20,9 +16,9 @@ function Contact() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10    items-start">
-        <div className="rounded-xl overflow-hidden shadow-md">
-          
+      {/* the actual map on the browser */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+        <div className="rounded-xl overflow-hidden shadow-md h-64 md:h-full min-h-[300px]">
           <Map />
         </div>
 
@@ -44,7 +40,7 @@ function Contact() {
             </div>
             <div>
               <p className="text-sm text-gray-400">Email</p>
-              <p className="font-semibold text-gray-800">
+              <p className="font-semibold text-gray-800 break-words">
                 info@mokoenattholdings.co.za
               </p>
             </div>
