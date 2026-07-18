@@ -6,16 +6,16 @@ import Background from "../images/services-images/Background.webp";
 // services
 function Services() {
   return (
-    <div>
+    <div className="relative">
       {/* background image */}
       <div
-        className="relative bg-cover bg-center bg-fixed"
+        className= "absolute inset-0 bg-cover bg-center blur-md scale-110"
         style={{ backgroundImage: `url(${Background})` }}
       ></div>
       {/* dark overlay so cards stay readable */}
       <div className="absolute inset-0 bg-black/10"></div>
 
-      <div className="max-w-6xl mx-auto px-6 py-20">
+      <div className="relative max-w-6xl mx-auto px-6 py-20">
         <div className="text-center mb-12">
           <p className="text-orange-100 font-semibold tracking-wide uppercase text-sm mb-2">
             What We Offer
