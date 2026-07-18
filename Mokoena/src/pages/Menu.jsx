@@ -7,12 +7,13 @@ function Menu() {
   return (
     <div className="w-full bg-gray-200">
       <div className="max-w-6xl mx-auto px-6 py-10">
+
         {/*cakes category */}
         <h3 className="text-center text-3xl font-semibold tracking-wide mb-8 text-[#4a2c2a]">CAKES</h3>
 
         {/* each image card from the array lives here */}
         {/* .map will perform a function in every original array and then return a new array with newly performed function */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
           {cakes.map((cake) => (
             // key is for react to know which array is which it tracks the id or index of an array
             <div className="bg-gray-300 rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-200" key={cake.name}>
@@ -64,7 +65,7 @@ function Menu() {
 
         {/* each image card from the array lives here */}
         {/* .map will perform a function in every original array and then return a new array with newly performed function */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-15 ">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 ">
           {specialdelights.map((delight) => (
 
             // key is for react to know which array is which it tracks the id or index of an array
