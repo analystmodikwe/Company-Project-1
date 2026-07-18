@@ -10,8 +10,8 @@ function Services() {
       <div className= "absolute inset-0 -z-10">
 
         {/* the orange blur top left and bottom left */}
-        <div className="absolute top-0 left-0 w-96 h-96 bg-orange-300 rounded-full blur-3xl opacity-40"></div>
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-orange-500 rounded-full blur-3xl opacity-30"></div> 
+        <div className="absolute top-0 left-0 w-64 h-64 sm:w-96 sm:h-96 bg-orange-300 rounded-full blur-2xl opacity-40 will-change-transform"></div>
+        <div className="absolute bottom-0 right-0 w-64 h-64 sm:w-96 sm:h-96 bg-orange-500 rounded-full blur-2xl opacity-30 will-change-transform"></div> 
 
       </div>
 
