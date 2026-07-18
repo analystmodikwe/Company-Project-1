@@ -19,7 +19,9 @@ function Menu() {
             <div className="bg-gray-300 rounded-xl overflow-hidden shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-200" key={cake.name}>
               {/* image per Array */}
               <div className="aspect-square overflow-hidden">
-                <img src={cake.image} alt={cake.name} className="w-full h-full object-cover" />
+                <img src={cake.image} alt={cake.name}
+                loading="lazy"
+                className="w-full h-full object-cover" />
               </div>
 
               {/* image name and price */}
@@ -46,7 +48,9 @@ function Menu() {
 
               {/* image per Array */}
               <div className="aspect-square overflow-hidden">
-                <img src={treat.image} alt={treat.name} className="w-full h-full object-cover"/>
+                <img src={treat.image} alt={treat.name} 
+                loading="lazy"
+                className="w-full h-full object-cover"/>
               </div>
 
               {/* image name and price */}
@@ -73,7 +77,9 @@ function Menu() {
               
               {/* image per Array */}
               <div className="aspect-square overflow-hidden">
-                <img src={delight.image} alt={delight.name} className="w-full h-full object-cover"/>
+                <img src={delight.image} alt={delight.name}
+                loading="lazy" 
+                className="w-full h-full object-cover"/>
               </div>
 
               {/* image name and price */}
