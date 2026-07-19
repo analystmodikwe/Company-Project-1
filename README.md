@@ -41,29 +41,6 @@ Tailwind CSS
 React Icons (react-icons/fa6)
 
 
-Project Structure
-
-src/
-├── components/
-│   ├── Navbar.jsx
-│   ├── Footer.jsx
-│   ├── Map.jsx
-│   └── Whatsapp.jsx
-├── pages/
-│   ├── Home.jsx
-│   ├── Services.jsx
-│   ├── Menu.jsx
-│   ├── AboutUs.jsx
-│   └── Contact.jsx
-├── data/
-│   ├── cakesData.js
-│   ├── everydayData.js
-│   ├── specialdelightsData.js
-│   └── services.js
-├── images/
-├── App.jsx
-└── main.jsx
-
 Getting Started
 
 Prerequisites
