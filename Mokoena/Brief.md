@@ -9,6 +9,8 @@ Industry: BAKING
 
 Current Link (before redesign): https://www.mokoenattholdings.co.za/en/ 
 
+Redesigned Link (after redesign): 
+
  
 <!-- How did you find them? (e.g. Google search, social media, personal experience as a customer, referral, etc.)  -->
 
