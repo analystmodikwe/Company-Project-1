@@ -40,10 +40,10 @@ function Contact() {
       </div>
 
       {/* the actual map on the browser */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
         <div
           ref={mapWrapperRef}
-          className="rounded-xl overflow-hidden shadow-md h-64 md:h-full min-h-[300px]"
+          className="rounded-xl overflow-hidden shadow-md h-full min-h-[300px]"
         >
           {/* the map will only load when it gets to this point */}
           {shouldLoadMap ? (
