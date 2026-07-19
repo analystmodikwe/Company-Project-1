@@ -1,11 +1,34 @@
-// import { useNavigate } from "react-router-dom";
 import Map from "../components/Map";
 import { FaPhone, FaEnvelope, FaWhatsapp } from "react-icons/fa6";
-
+import { useState, useRef, useEffect } from "react";
 
 // contact info
 function Contact() {
-  // const navigate = useNavigate();
+  const [shouldLoadMap, setShouldLoadMap] = useState(false);
+  const mapWrapperRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShouldLoadMap(true);
+
+          // only need to trigger once
+          observer.disconnect();
+        }
+      },
+
+      // it will start to load slightly before its's fully in view
+      { rootMargin: "200px" },
+    );
+
+    // useRef
+    if (mapWrapperRef.current) {
+      observer.observe(mapWrapperRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div className="max-w-6xl mx-auto px-6 py-16">
@@ -18,8 +41,16 @@ function Contact() {
 
       {/* the actual map on the browser */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-        <div className="rounded-xl overflow-hidden shadow-md h-64 md:h-full min-h-[300px]">
-          <Map />
+        <div
+          ref={mapWrapperRef}
+          className="rounded-xl overflow-hidden shadow-md h-64 md:h-full min-h-[300px]"
+        >
+          {/* the map will only load when it gets to this point */}
+          {shouldLoadMap ? (
+            <Map />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm"></div>
+          )}
         </div>
 
         {/* contact info card */}
@@ -28,6 +59,7 @@ function Contact() {
             <div className="bg-orange-100 text-orange-500 p-3 rounded-full">
               <FaPhone />
             </div>
+
             <div>
               <p className="text-sm text-gray-400">Phone</p>
               <p className="font-semibold text-gray-800">011 385 1438</p>
@@ -38,6 +70,7 @@ function Contact() {
             <div className="bg-orange-100 text-orange-500 p-3 rounded-full">
               <FaEnvelope />
             </div>
+
             <div>
               <p className="text-sm text-gray-400">Email</p>
               <p className="font-semibold text-gray-800 break-words">
