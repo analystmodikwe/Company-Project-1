@@ -21,6 +21,7 @@ function Menu() {
               <div className="aspect-square overflow-hidden">
                 <img src={cake.image} alt={cake.name}
                 loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover" />
               </div>
 
@@ -50,6 +51,7 @@ function Menu() {
               <div className="aspect-square overflow-hidden">
                 <img src={treat.image} alt={treat.name} 
                 loading="lazy"
+                decoding="async"
                 className="w-full h-full object-cover"/>
               </div>
 
@@ -78,7 +80,8 @@ function Menu() {
               {/* image per Array */}
               <div className="aspect-square overflow-hidden">
                 <img src={delight.image} alt={delight.name}
-                loading="lazy" 
+                loading="lazy"
+                decoding="async" 
                 className="w-full h-full object-cover"/>
               </div>
 
